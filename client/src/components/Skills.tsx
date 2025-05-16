@@ -50,7 +50,7 @@ export default function Skills() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            I've worked with a variety of technologies in blockchain, web development, and AI automation.
+            I build smart, secure blockchain apps and connect them with seamless wallet integrations. Plus, I blend AI and IoT to create tech that's both powerful and practical.
           </p>
         </motion.div>
         
@@ -133,15 +133,15 @@ export default function Skills() {
             <div className="relative bg-background/80 border border-border p-6 rounded-xl z-10">
               <h4 className="text-xl font-medium mb-3">Continuous Learning</h4>
               <p className="text-muted-foreground">
-                I'm always expanding my skill set and staying updated with the latest technologies in blockchain and web development.
+                I'm always exploring new blockchain protocols, AI frameworks, and IoT technologies to build innovative solutions that push boundaries.
               </p>
               <div className="flex justify-center mt-4">
                 <a 
-                  href="#projects" 
+                  href="#contact" 
                   className="px-5 py-2 bg-primary/10 text-primary hover:bg-primary/20 rounded-full transition-colors duration-300"
                 >
-                  See My Projects
-                  <i className="fas fa-arrow-right ml-2"></i>
+                  Let's Connect
+                  <i className="fas fa-bolt ml-2"></i>
                 </a>
               </div>
             </div>

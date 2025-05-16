@@ -5,7 +5,7 @@ import profileImage from "../assets/mayur-profile.jpg";
 
 export default function Hero() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const rotatingTexts = ["Blockchain Developer", "IoT Specialist", "AI & ML Engineer"];
+  const rotatingTexts = ["Blockchain Developer", "IoT Explorer", "AI Enthusiast", "UX/UI Designer", "Blockchain Enthusiast"];
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -72,7 +72,7 @@ export default function Hero() {
               variants={fadeInUpVariants(0.3)}
               className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8"
             >
-              I develop innovative blockchain solutions, IoT systems, and AI applications with a focus on solving real-world problems through cutting-edge technology.
+              I'm Mayur — a tech rebel blending Web3, AI, and IoT to build wild, future-ready solutions. From cooking up decentralized identity systems to training AI for traffic cops, I don't just build projects — I build experiences. With 10+ hackathons under my belt (and trophies to prove it), I'm all about pushing limits, breaking norms, and shipping bold ideas that actually work.
             </motion.p>
             
             <motion.div 

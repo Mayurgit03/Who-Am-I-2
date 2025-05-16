@@ -57,7 +57,7 @@ export const projectsData: Project[] = [
     image: deidImage,
     technologies: ["Solidity", "Ethereum", "IPFS", "Metamask", "React.js", "Hardhat"],
     demoUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Mayurgit03/DeID",
     tag: "Blockchain"
   },
   {
@@ -84,7 +84,7 @@ export const projectsData: Project[] = [
     image: walletImage,
     technologies: ["React.js", "Solidity", "Ethers.js", "Hardhat", "MetaMask", "Tailwind CSS", "IPFS", "Alchemy"],
     demoUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Mayurgit03/FUTURE_BC_02",
     tag: "DApp"
   }
 ];

@@ -3,17 +3,16 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { staggerChildren, fadeInUpVariants } from "@/lib/utils";
 
 const socialLinks = [
-  { icon: "github", url: "#", label: "GitHub" },
-  { icon: "linkedin", url: "#", label: "LinkedIn" },
-  { icon: "twitter", url: "#", label: "Twitter" },
-  { icon: "dribbble", url: "#", label: "Dribbble" }
+  { icon: "github", url: "https://github.com/Mayurgit03", label: "GitHub" },
+  { icon: "linkedin", url: "https://www.linkedin.com/in/mayurp03/", label: "LinkedIn" },
+  { icon: "twitter", url: "http://x.com/0xMayur_p", label: "Twitter" }
 ];
 
 const personalInfo = [
-  { icon: "user", label: "Name", value: "Mayur P" },
-  { icon: "envelope", label: "Email", value: "contact@mayurp.dev" },
-  { icon: "map-marker-alt", label: "Location", value: "Mumbai, India" },
-  { icon: "laptop-code", label: "Experience", value: "3+ Years" }
+  { icon: "user", label: "Name", value: "Mayur .P" },
+  { icon: "envelope", label: "Email", value: "mayurkarthick2006@gmail.com" },
+  { icon: "map-marker-alt", label: "Location", value: "Coimbatore, Tamil Nadu" },
+  { icon: "laptop-code", label: "Status", value: "Fresher" }
 ];
 
 const skills = [
@@ -52,26 +51,24 @@ export default function About() {
               className="text-2xl font-semibold mb-4"
               variants={fadeInUpVariants()}
             >
-              Frontend Developer & UI/UX Designer
+              Blockchain Developer | Hackathon Enthusiast
             </motion.h3>
             
             <motion.p 
               className="text-muted-foreground mb-6 leading-relaxed"
               variants={fadeInUpVariants(0.1)}
             >
-              I'm a passionate frontend developer with a keen eye for design and user experience. 
-              With a strong foundation in modern web technologies, I strive to create beautiful, 
-              responsive, and user-friendly applications that solve real-world problems.
+              Hey, I'm Mayur — a passionate blockchain developer and Web3 enthusiast on a mission to build the future with code. 
+              I specialize in crafting decentralized applications, AI-driven systems, and innovative IoT solutions that solve real problems.
             </motion.p>
             
             <motion.p 
               className="text-muted-foreground mb-8 leading-relaxed"
               variants={fadeInUpVariants(0.2)}
             >
-              My approach combines technical expertise with creative problem-solving. I enjoy working on 
-              challenging projects that push me to expand my knowledge and skills. When I'm not coding, 
-              you'll find me exploring new technologies, contributing to open-source projects, or enhancing 
-              my design skills.
+              With 10+ hackathons under my belt and multiple finalist positions, I thrive in fast-paced environments where bold ideas 
+              turn into powerful, scalable tech. Whether it's deploying smart contracts, integrating wallets, or building cutting-edge DApps, 
+              I bring energy, curiosity, and clean code to everything I do. Let's build something incredible.
             </motion.p>
             
             <motion.div 
