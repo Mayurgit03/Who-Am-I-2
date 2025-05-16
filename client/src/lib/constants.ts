@@ -47,58 +47,40 @@ export const techIcons: TechIcon[] = [
 
 export const projectsData: Project[] = [
   {
-    title: "Modern E-commerce Store",
-    description: "A fully responsive e-commerce platform built with React, Redux, and Stripe integration.",
-    image: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["React", "Redux", "Stripe", "Tailwind"],
+    title: "DeID – Decentralized Digital Identity System",
+    description: "Built a secure blockchain-based system to verify and manage digital identities, reducing identity fraud with full user control and privacy.",
+    image: "https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    technologies: ["Solidity", "Ethereum", "IPFS", "Metamask", "React.js", "Hardhat"],
     demoUrl: "#",
     codeUrl: "#",
-    tag: "React"
+    tag: "Blockchain"
   },
   {
-    title: "Analytics Dashboard",
-    description: "Interactive dashboard with real-time data visualization, built with Next.js and Chart.js.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["Next.js", "Chart.js", "Firebase", "SWR"],
+    title: "Smart Package Tracking System",
+    description: "Developed an IoT-powered real-time tracking solution for delivery bags using chip sensors to detect tampering and ensure last-mile transparency.",
+    image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    technologies: ["Arduino", "NodeMCU", "IoT Sensors", "Firebase", "Flutter", "C++"],
     demoUrl: "#",
     codeUrl: "#",
-    tag: "Next.js"
+    tag: "IoT"
   },
   {
-    title: "Fitness Tracker App",
-    description: "Mobile fitness tracking application built with React Native and integrated with health APIs.",
-    image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["React Native", "Redux", "Firebase", "Expo"],
+    title: "NFT-Based E-Voting System",
+    description: "Created a tamper-proof voting system using blockchain and NFTs to ensure secure, transparent, and traceable elections.",
+    image: "https://images.unsplash.com/photo-1607275107446-eb788823fa8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    technologies: ["Solidity", "Ethereum", "NFT.Storage", "Web3.js", "React.js", "Metamask"],
     demoUrl: "#",
     codeUrl: "#",
-    tag: "React Native"
+    tag: "NFT"
   },
   {
-    title: "Creative Agency Website",
-    description: "A responsive website for a creative agency with smooth animations and parallax effects.",
-    image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["HTML5", "SCSS", "JavaScript", "GSAP"],
+    title: "RoadGuard – AI Traffic Violation Detector",
+    description: "Designed an AI system that scans live camera feeds to automatically detect and report traffic violations, promoting road safety.",
+    image: "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    technologies: ["Python", "OpenCV", "YOLOv8", "TensorFlow", "Flask", "Raspberry Pi"],
     demoUrl: "#",
     codeUrl: "#",
-    tag: "HTML/CSS/JS"
-  },
-  {
-    title: "Real-time Chat App",
-    description: "Full-stack chat application with real-time messaging using Socket.io and MERN stack.",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["MongoDB", "Express", "React", "Node.js"],
-    demoUrl: "#",
-    codeUrl: "#",
-    tag: "MERN Stack"
-  },
-  {
-    title: "Weather Forecast App",
-    description: "Interactive weather application with 7-day forecast, built with Vue.js and OpenWeather API.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["Vue.js", "Vuex", "Chart.js", "API"],
-    demoUrl: "#",
-    codeUrl: "#",
-    tag: "Vue.js"
+    tag: "AI"
   }
 ];
 
