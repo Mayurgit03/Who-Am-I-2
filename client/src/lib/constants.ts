@@ -45,11 +45,16 @@ export const techIcons: TechIcon[] = [
   { name: "Git", icon: "fab fa-git-alt", color: "text-red-500" }
 ];
 
+import walletImage from "../assets/projects/wallet-app.jpg";
+import packageTrackingImage from "../assets/projects/package-tracking.jpg";
+import nftVotingImage from "../assets/projects/nft-voting.jpg";
+import deidImage from "../assets/projects/deid-identity.jpg";
+
 export const projectsData: Project[] = [
   {
     title: "DeID – Decentralized Digital Identity System",
     description: "Built a secure blockchain-based system to verify and manage digital identities, reducing identity fraud with full user control and privacy.",
-    image: "https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: deidImage,
     technologies: ["Solidity", "Ethereum", "IPFS", "Metamask", "React.js", "Hardhat"],
     demoUrl: "#",
     codeUrl: "#",
@@ -58,7 +63,7 @@ export const projectsData: Project[] = [
   {
     title: "Smart Package Tracking System",
     description: "Developed an IoT-powered real-time tracking solution for delivery bags using chip sensors to detect tampering and ensure last-mile transparency.",
-    image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: packageTrackingImage,
     technologies: ["Arduino", "NodeMCU", "IoT Sensors", "Firebase", "Flutter", "C++"],
     demoUrl: "#",
     codeUrl: "#",
@@ -67,20 +72,20 @@ export const projectsData: Project[] = [
   {
     title: "NFT-Based E-Voting System",
     description: "Created a tamper-proof voting system using blockchain and NFTs to ensure secure, transparent, and traceable elections.",
-    image: "https://images.unsplash.com/photo-1607275107446-eb788823fa8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    image: nftVotingImage,
     technologies: ["Solidity", "Ethereum", "NFT.Storage", "Web3.js", "React.js", "Metamask"],
     demoUrl: "#",
     codeUrl: "#",
     tag: "NFT"
   },
   {
-    title: "RoadGuard – AI Traffic Violation Detector",
-    description: "Designed an AI system that scans live camera feeds to automatically detect and report traffic violations, promoting road safety.",
-    image: "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-    technologies: ["Python", "OpenCV", "YOLOv8", "TensorFlow", "Flask", "Raspberry Pi"],
+    title: "DApp with Wallet Integration",
+    description: "Developed a decentralized application that connects seamlessly with crypto wallets like MetaMask, enabling users to interact with Ethereum smart contracts securely and in real-time.",
+    image: walletImage,
+    technologies: ["React.js", "Solidity", "Ethers.js", "Hardhat", "MetaMask", "Tailwind CSS", "IPFS", "Alchemy"],
     demoUrl: "#",
     codeUrl: "#",
-    tag: "AI"
+    tag: "DApp"
   }
 ];
 
