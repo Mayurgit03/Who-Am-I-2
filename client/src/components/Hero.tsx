@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { staggerChildren, fadeInUpVariants } from "@/lib/utils";
+import profileImage from "../assets/mayur-profile.jpg";
 
 export default function Hero() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const rotatingTexts = ["Frontend Developer", "UI/UX Designer", "Web Enthusiast"];
+  const rotatingTexts = ["Blockchain Developer", "IoT Specialist", "AI & ML Engineer"];
   
   useEffect(() => {
     const interval = setInterval(() => {
@@ -71,7 +72,7 @@ export default function Hero() {
               variants={fadeInUpVariants(0.3)}
               className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8"
             >
-              I create responsive web applications with modern technologies, focused on delivering exceptional user experiences.
+              I develop innovative blockchain solutions, IoT systems, and AI applications with a focus on solving real-world problems through cutting-edge technology.
             </motion.p>
             
             <motion.div 
@@ -99,7 +100,7 @@ export default function Hero() {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1580518337843-f959e992563b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                src={profileImage}
                 alt="Mayur P" 
                 className="w-full h-full object-cover rounded-full border-4 border-primary/30 shadow-xl shadow-primary/20" 
               />
