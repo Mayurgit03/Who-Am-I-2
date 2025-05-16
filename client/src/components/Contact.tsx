@@ -78,11 +78,12 @@ export default function Contact() {
           variants={fadeInUpVariants()}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get In <span className="text-primary">Touch</span>
+            Let's Build <span className="text-primary">Together</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? Feel free to reach out using the form below or through my social channels.
+            Ready to bring your blockchain ideas to life? Whether you're looking for a hackathon partner, 
+            need help with smart contracts, or want to discuss the latest in Web3 — I'm all ears!
           </p>
         </motion.div>
         
@@ -204,27 +205,26 @@ export default function Contact() {
               <div className="mt-10">
                 <h4 className="font-medium mb-4">Follow Me</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300">
+                  <a href="https://github.com/Mayurgit03" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300">
+                  <a href="https://www.linkedin.com/in/mayurp03/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300">
+                  <a href="http://x.com/0xMayur_p" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300">
                     <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300">
-                    <i className="fab fa-instagram"></i>
                   </a>
                 </div>
               </div>
               
               <div className="mt-10">
-                <h4 className="font-medium mb-4">Available For</h4>
+                <h4 className="font-medium mb-4">Interested In</h4>
                 <div className="flex flex-wrap gap-3">
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Freelance</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Full-time</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Collaboration</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Hackathons</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Web3 Projects</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Smart Contracts</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">IoT Solutions</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">AI Integration</span>
                 </div>
               </div>
             </div>

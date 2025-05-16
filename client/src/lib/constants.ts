@@ -93,21 +93,28 @@ export const contactInfo: ContactInfo[] = [
   {
     title: "Location",
     icon: "map-marker-alt",
-    value: "Mumbai, Maharashtra, India",
+    value: "Coimbatore, Tamil Nadu",
     isLink: false
   },
   {
     title: "Email",
     icon: "envelope",
-    value: "contact@mayurp.dev",
+    value: "mayurkarthick2006@gmail.com",
     isLink: true,
-    linkHref: "mailto:contact@mayurp.dev"
+    linkHref: "mailto:mayurkarthick2006@gmail.com"
   },
   {
-    title: "Phone",
-    icon: "phone-alt",
-    value: "+91 9876 543 210",
+    title: "Twitter",
+    icon: "twitter",
+    value: "@0xMayur_p",
     isLink: true,
-    linkHref: "tel:+919876543210"
+    linkHref: "http://x.com/0xMayur_p"
+  },
+  {
+    title: "GitHub",
+    icon: "github",
+    value: "Mayurgit03",
+    isLink: true,
+    linkHref: "https://github.com/Mayurgit03"
   }
 ];
