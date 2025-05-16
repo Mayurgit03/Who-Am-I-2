@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import { staggerChildren, fadeInUpVariants, scaleUpVariants } from "@/lib/utils";
+import { staggerChildren, fadeInUpVariants } from "@/lib/utils";
 
 const socialLinks = [
   { icon: "github", url: "#", label: "GitHub" },
@@ -14,6 +14,11 @@ const personalInfo = [
   { icon: "envelope", label: "Email", value: "contact@mayurp.dev" },
   { icon: "map-marker-alt", label: "Location", value: "Mumbai, India" },
   { icon: "laptop-code", label: "Experience", value: "3+ Years" }
+];
+
+const skills = [
+  "React.js", "Next.js", "JavaScript", "TypeScript", "Node.js",
+  "Tailwind CSS", "UI/UX Design", "Figma", "Responsive Design"
 ];
 
 export default function About() {
@@ -35,40 +40,12 @@ export default function About() {
         </motion.div>
         
         <motion.div 
-          className="flex flex-col lg:flex-row items-center gap-12"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12"
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={staggerChildren(0.2)}
         >
           <motion.div 
-            className="lg:w-5/12"
-            variants={scaleUpVariants()}
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-2xl transform rotate-6 scale-105"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
-                alt="Mayur P" 
-                className="relative z-10 rounded-2xl object-cover w-full h-auto shadow-xl" 
-              />
-              
-              <motion.div 
-                className="absolute -bottom-4 -right-4 bg-background px-4 py-2 rounded-lg shadow-lg z-20 border border-border"
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ delay: 0.6, duration: 0.6 }}
-              >
-                <p className="text-sm font-mono">
-                  <span className="text-primary">const</span>{" "}
-                  <span className="text-accent">passion</span> ={" "}
-                  <span className="text-green-400">'coding'</span>;
-                </p>
-              </motion.div>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="lg:w-7/12"
             variants={staggerChildren(0.1)}
           >
             <motion.h3 
@@ -131,6 +108,79 @@ export default function About() {
                 </a>
               ))}
             </motion.div>
+          </motion.div>
+          
+          <motion.div
+            variants={fadeInUpVariants(0.3)}
+            className="bg-background/80 p-6 rounded-xl border border-border"
+          >
+            <h3 className="text-xl font-semibold mb-6 flex items-center">
+              <i className="fas fa-code text-primary mr-3"></i>
+              My Technical Skills
+            </h3>
+            
+            <div className="relative">
+              <motion.div 
+                className="absolute -top-4 -right-4 bg-background px-4 py-2 rounded-lg shadow-lg z-20 border border-border"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+              >
+                <p className="text-sm font-mono">
+                  <span className="text-primary">const</span>{" "}
+                  <span className="text-accent">passion</span> ={" "}
+                  <span className="text-green-400">'coding'</span>;
+                </p>
+              </motion.div>
+              
+              <div className="flex flex-wrap gap-2 mt-4">
+                {skills.map((skill, index) => (
+                  <motion.span
+                    key={index}
+                    className="px-3 py-1.5 bg-muted text-sm rounded-full hover:bg-primary/20 transition-colors duration-300 cursor-default"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                    transition={{ delay: 0.1 * index, duration: 0.4 }}
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+              
+              <div className="mt-8">
+                <h4 className="font-medium mb-4">My Development Process</h4>
+                <ol className="space-y-3 list-decimal list-inside text-muted-foreground">
+                  <motion.li
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                    transition={{ delay: 0.5, duration: 0.4 }}
+                  >
+                    Understanding requirements and planning architecture
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                    transition={{ delay: 0.6, duration: 0.4 }}
+                  >
+                    Designing wireframes and UI components
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                    transition={{ delay: 0.7, duration: 0.4 }}
+                  >
+                    Implementing core functionality and features
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                    transition={{ delay: 0.8, duration: 0.4 }}
+                  >
+                    Testing, optimizing and refining the experience
+                  </motion.li>
+                </ol>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
       </div>
