@@ -39,15 +39,20 @@ export default function Contact() {
   const onSubmit = async (data: ContactFormValues) => {
     try {
       setIsSubmitting(true);
-      // In a real application, you would send this data to the server
-      console.log("Form data:", data);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Create mailto link with form data
+      const subject = encodeURIComponent(data.subject);
+      const body = encodeURIComponent(
+        `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+      );
+      const mailtoLink = `mailto:mayur.p.dev@gmail.com?subject=${subject}&body=${body}`;
+      
+      // Open email client
+      window.open(mailtoLink, '_blank');
       
       toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out, I'll get back to you soon.",
+        title: "Email client opened!",
+        description: "Your default email client has been opened with the message pre-filled.",
         variant: "default"
       });
       
