@@ -15,10 +15,11 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    host: true,
+    host: '0.0.0.0',
     port: 5000,
     hmr: {
-      clientPort: 5000
+      port: 5000,
+      host: '0.0.0.0'
     },
     allowedHosts: 'all'
   },
