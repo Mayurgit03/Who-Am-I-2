@@ -24,7 +24,7 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 export default function Contact() {
   const { ref, inView } = useIntersectionObserver({ threshold: 0.1, triggerOnce: true });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
+  const { toast } = useToast() as { toast: (props: { title: string; description: string; variant: "default" | "destructive" }) => void };
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),

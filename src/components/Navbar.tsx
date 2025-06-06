@@ -51,7 +51,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {navLinks.map((link, index) => (
+            {navLinks.map((link) => (
               <a 
                 key={link.href}
                 href={link.href} 
