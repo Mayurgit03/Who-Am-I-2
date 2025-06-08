@@ -32,11 +32,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.15.29",
-<<<<<<< HEAD
     "@types/react": "^18.3.23",
-=======
-    "@types/react": "^18.2.64",
->>>>>>> 215ecdedc1769aa92bd69336bb1c1a1adbdfcd33
     "@types/react-day-picker": "^5.2.1",
     "@types/react-dom": "^18.2.21",
     "@types/wouter": "^2.0.1",
