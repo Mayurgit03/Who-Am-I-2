@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after,
+section,
+div,
+header,
+footer,
+main {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
